@@ -12,10 +12,11 @@ body {
 }
 
 .cabecalho h1 {
-    color: #f1ecff;
+    color: #9c3b42;
     font-size: 45px;
     letter-spacing: 10px;
     text-transform: uppercase;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .personagens-slider {
@@ -32,25 +33,26 @@ body {
 }
 
 .btn-seta {
-    background-color: #ffffff;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    border-radius: 0;
     border: 0;
+    padding: 0;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s ease-in-out;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: background-color 0.7s ease-in-out;
+    box-shadow: none;
+    font-size: 45px;
+    color: #ed6974;
 }
 
 .btn-seta.btn-voltar {
     transform: rotateY(180deg);
 }
 
-.btn-seta:hover {
-    background-color: #8351fe;
+.btn-seta:hover i {
+    color: #9f7487;
+    transition: background-color 0.7s ease-in-out;
 }
 
 .cartao {
@@ -90,15 +92,10 @@ body {
 
 .cartao .descricao {
     background-color: rgb(255, 255, 255, 0.8);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.cartao .descricao .titulo {
-    background-color: #333333;
-    font-size: 20px;
-    color: #ffffff;
-    padding: 12px;
+    border-radius: 5px;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
 }
 
 .cartao .descricao .texto {
@@ -110,25 +107,25 @@ body {
 }
 
 .cartao.fundo-1 {
-    background: url('../img/fundo-1.jpg') no-repeat;
+    background: url('../img/parede.jpg') no-repeat;
 }
 
 .cartao.fundo-2 {
-    background: url('../img/fundo-2.jpg') no-repeat;
+    background: url('../img/parede.jpg') no-repeat;
 }
 
 .cartao.fundo-3 {
-    background: url('../img/fundo-3.jpg') no-repeat;
+    background: url('../img/parede.jpg') no-repeat;
 }
 
 .cartao.fundo-4 {
-    background: url('../img/fundo-4.jpg') no-repeat;
+    background: url('../img/parede.jpg') no-repeat;
 }
 
 .cartao.fundo-5 {
-    background: url('../img/fundo-5.jpg') no-repeat;
+    background: url('../img/parede.jpg') no-repeat;
 }
 
 .cartao.fundo-6 {
-    background: url('../img/fundo-6.jpg') no-repeat;
+    background: url('../img/parede.jpg') no-repeat;
 }
